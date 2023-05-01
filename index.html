@@ -2,95 +2,18 @@
 <html>
 <head>
 	<title>Meu Site</title>
-	<style>
-		body {
-			background-color: #fff;
-			margin: 0;
-			padding: 0;
-			font-family: Comme;
-		}
-
-		header {
-			background-color: #0077be;
-			color: #fff;
-			text-align: center;
-			padding: 20px;
-		}
-
-		nav {
-			background-color: #e8f4fc;
-			padding: 20px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-		}
-
-		nav a {
-			color: #000;
-			text-decoration: none;
-			font-weight: bold;
-			padding: 10px;
-			border: 2px solid #0077be;
-			border-radius: 5px;
-			margin: 10px;
-			background-color: #fff;
-			transition: all 0.3s ease;
-		}
-
-		nav a:hover {
-			background-color: #0077be;
-			color: #fff;
-			cursor: pointer;
-			animation: shake 0.2s linear;
-			animation-iteration-count: 1;
-		}
-
-		@keyframes shake {
-			0% { transform: rotate(0deg); }
-			10% { transform: rotate(5deg); }
-			20% { transform: rotate(-5deg); }
-			30% { transform: rotate(5deg); }
-			40% { transform: rotate(-5deg); }
-			50% { transform: rotate(5deg); }
-			60% { transform: rotate(-5deg); }
-			70% { transform: rotate(5deg); }
-			80% { transform: rotate(-5deg); }
-			90% { transform: rotate(5deg); }
-			100% { transform: rotate(0deg); }
-		}
-
-		section {
-			background-color: #e8f4fc;
-			padding: 20px;
-			margin: 10px;
-			border: 2px solid #0077be;
-			border-radius: 5px;
-			text-align: center;
-		}
-
-		footer {
-			background-color: #0077be;
-			color: #fff;
-			text-align: center;
-			padding: 20px;
-		}
-		.logos {
-			width: 30px;
-		}
-		.contatos {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-		.contatos_paragrafo {
-			margin-top: 0;
-		}
-	</style>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/script.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Meu Site</h1>
 	</header>
+	<div id="loader">
+		<div id="loader-bar-wrapper">
+		  <progress id="loader-bar" max="100"></progress>
+		</div>
+	  </div>
 	<nav>
 		<a href="#sobre" onmouseover="buttonHover(this)">Sobre</a>
 		<a href="#servicos" onmouseover="buttonHover(this)">Serviços/Habilidades</a>
@@ -107,7 +30,12 @@
 	</section>
 	<section id="portfolio">
 		<h2>Portfólio</h2>
-		<p>Exemplos dos meus trabalhos anteriores.</p>
+		<p>Banners:</p>
+		<div class="imagem-scroll">
+			<img src="assets\images\banner1.png" alt="banner 1" width="600"/>
+			<img src="assets\images\banner2.png" alt="banner 1" width="600"/>
+			<img src="assets\images\banner3.png" alt="banner 1" width="600"/>
+		</div>
 	</section>
 	<section id="contato">
 		<h2>Contato</h2>
@@ -128,13 +56,5 @@
 		<p>©Meu Site 2023 - Todos os direitos reservados</p>
 	</footer>
 
-	<script>
-		function buttonHover(button) {
-			button.classList.add("hover");
-			setTimeout(function() {
-				button.classList.remove("hover");
-			}, 200);
-		}
-	</script>
 </body>
 </html>

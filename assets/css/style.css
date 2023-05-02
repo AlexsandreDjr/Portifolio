@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300&display=swap');
 body {
     background-color: #fff;
     margin: 0;
     padding: 0;
-    font-family: Comme;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    background-color: #0077be;
+    background: linear-gradient(to bottom, #0077be, #4796c4);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow:
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+    font-size: 32px;
 }
 
 nav {
@@ -41,6 +49,10 @@ nav a:hover {
     animation-iteration-count: 1;
 }
 
+.botoes a {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0.0, 0.5);
+}
+
 @keyframes shake {
     0% { transform: rotate(0deg); }
     10% { transform: rotate(5deg); }
@@ -56,7 +68,8 @@ nav a:hover {
 }
 
 section {
-    background-color: #e8f4fc;
+    background-color: #e8f4fc;*/
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0.0, 0.5);
     padding: 20px;
     margin: 10px;
     border: 2px solid #0077be;
@@ -65,7 +78,7 @@ section {
 }
 
 footer {
-    background-color: #0077be;
+    background: linear-gradient(to bottom, #4796c4, #0077be);
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -102,18 +115,23 @@ footer {
     height: 100%;
     background-color: #00bcd4;
   }
-  .imagem-scroll {
+  .scroll-container {
+    width: 100%;
+    overflow-x: scroll;
     white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
   }
-  .imagem-scroll img {
+  .image-container {
     display: inline-block;
-    height: 100%;
+  }
+  .image-container img {
+    display: inline-block;
+    height: 400px;
+    width: auto;
     margin-right: 10px;
   }
-  .imagem-scroll img:hover {
-    transform: scale(1.2);
-    
+  .image-container2 img {
+    display: inline-block;
+    height: 200px;
+    width: auto;
+    margin-right: 10px;
   }

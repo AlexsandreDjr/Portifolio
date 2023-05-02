@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Meu Site</title>
+	<title>ADJ Designs</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="assets/js/script.js"></script>
+	<style>
+		
+	</style>
 </head>
 <body>
 	<header>
-		<h1>Meu Site</h1>
+		<h1>ADJ DESIGNS</h1>
 	</header>
 	<div id="loader">
 		<div id="loader-bar-wrapper">
 		  <progress id="loader-bar" max="100"></progress>
 		</div>
 	  </div>
-	<nav>
+	<nav class="botoes">
 		<a href="#sobre" onmouseover="buttonHover(this)">Sobre</a>
 		<a href="#servicos" onmouseover="buttonHover(this)">Serviços/Habilidades</a>
 		<a href="#portfolio" onmouseover="buttonHover(this)">Portfólio</a>
@@ -22,6 +25,7 @@
 	</nav>
 	<section id="sobre">
 		<h2>Sobre</h2>
+		<img src="assets/images/foto.jpg" alt="foto" width="250px"/>
 		<p>Texto sobre mim e sobre o meu trabalho.</p>
 	</section>
 	<section id="servicos">
@@ -31,10 +35,23 @@
 	<section id="portfolio">
 		<h2>Portfólio</h2>
 		<p>Banners:</p>
-		<div class="imagem-scroll">
-			<img src="assets\images\banner1.png" alt="banner 1" width="600"/>
-			<img src="assets\images\banner2.png" alt="banner 1" width="600"/>
-			<img src="assets\images\banner3.png" alt="banner 1" width="600"/>
+		<div class="scroll-container">
+			<div class="image-container">
+				<img src="assets\images\banner1.png" alt="banner 1" />
+				<img src="assets\images\banner2.png" alt="banner 2" />
+				<img src="assets\images\banner3.png" alt="banner 3" />
+				<img src="assets\images\banner4.png" alt="banner 4" />
+				</div>
+		</div>
+		<p>Logotipos:</p>
+		<div class="scroll-container">
+			<div class="image-container2">
+				<img src="assets\images\logo1.png" alt="logo 1" />
+				<img src="assets\images\logo2.png" alt="logo 2" />
+				<img src="assets\images\logo3.png" alt="logo 3" />
+				<img src="assets\images\logo4.png" alt="logo 4" />
+				<img src="assets\images\logo5.jpg" alt="logo 5" />
+				</div>
 		</div>
 	</section>
 	<section id="contato">
@@ -53,7 +70,7 @@
 		</div>
 	</section>
 	<footer>
-		<p>©Meu Site 2023 - Todos os direitos reservados</p>
+		<p>©ADJ Designs 2023 - Todos os direitos reservados</p>
 	</footer>
 
 </body>

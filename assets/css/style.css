@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #0077be, #4796c4);
+    background: linear-gradient(to bottom, #0077be, #6FBAFF);
     color: #fff;
     text-align: center;
     padding: 5px;
@@ -22,7 +22,7 @@ header {
 
 nav {
     background-color: #e8f4fc;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,7 +36,7 @@ nav a {
     padding: 10px;
     border: 2px solid #0077be;
     border-radius: 5px;
-    margin: 10px;
+    margin: 5px;
     background-color: #fff;
     transition: all 0.3s ease;
 }
@@ -72,13 +72,15 @@ section {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0.0, 0.5);
     padding: 20px;
     margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 2px solid #0077be;
     border-radius: 5px;
     text-align: center;
 }
 
 footer {
-    background: linear-gradient(to bottom, #4796c4, #0077be);
+    background: linear-gradient(to bottom, #6FBAFF, #0077be);
     color: #fff;
     text-align: center;
     padding: 20px;
